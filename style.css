@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  height: 100vh;
+  background: #00695C
+}
+.wrapper {
+  background-color: #fff;
+  padding: 2em 2em;
+  position: absolute;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
+}
+#placement {
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  outline: none;
+  border-radius: 5px;
+}
+.options {
+  margin-top: 5px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+select {
+  appearance: none;
+  width: 8em;
+  padding: 0.45em 0.9em;
+  font-size: 1.25em;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-color: #00897B;
+  border: none;
+  color: #ffffff;
+  background-image: url("arrow.png");
+  background-repeat: no-repeat;
+  background-size: 1.1em;
+  background-position: 6em;
+  outline: none;
+  border-radius: 0.3em;
+}
+select::-ms-expand {
+  display: none;
+}
+select option {
+  background-color: #f5f0f0;
+  color: #00897B;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  font-size: 1.12em;
+}
+.selected {
+  display: none;
+}
+.color-inp {
+  appearance: none;
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  outline: none;
+  border: 1px  solid #fff;
+}
+.color-inp::-webkit-color-swatch {
+  border-radius: 0.3em;
+  border: 0.18em solid #00796B;
+}
+.color-inp::-moz-color-swatch {
+  border-radius: 0.3em;
+  border: 0.18em solid #00796B;
+}
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.box button,
+.box a{
+  font-size: 1em;
+  padding: 0.8em 2em;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  
+}
+.box button:disabled {
+  background-color: #00695C;
+  color: #fff;
+  border: 2px solid #00897B;
+  letter-spacing: 5px;
+  font-weight: bold;
+  letter-spacing: 4px;
+
+}
+.box button {
+  background-color: #00695C;
+  color: #fff;
+  border: 2px solid #00897B;
+  
+  
+}
+.box a {
+  background-color: #00695C;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0.18em solid #00897B;
+  padding-left: 35%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  background-color: #cccccc58;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
